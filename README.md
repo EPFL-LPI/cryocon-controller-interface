@@ -3,4 +3,4 @@
 
 Provides a Python and GUI interface for a CryoCon 22C Temeprature Controller.
 
-Executable is available at **app > target > cryocon > cryocon.exe**
+Use [`fbs`](https://build-system.fman.io/) to build the app.

@@ -15,8 +15,6 @@
 # ## Converting to .py
 # To save this file for use as a CLI, convert it to a .py file using `jupyter nbconvert --to python <filename>`
 
-# In[1]:
-
 
 import os
 import sys
@@ -53,17 +51,7 @@ from PyQt5.QtWidgets import (
 )
 
 # controller
-from importlib import reload
-import cryocon_controller as cryo
-
-
-# In[2]:
-
-
-reload( cryo )
-
-
-# In[8]:
+import cryocon_22c_controller as cryo
 
 
 class CryoconInterface( QWidget ):
@@ -608,7 +596,7 @@ class CryoconInterface( QWidget ):
             pos = ranges.index( curr )
             pos += change
             
-            if ( pos < 0 ) or ( pos > len( ranges ) ):
+            if ( pos < 0 ) or ( pos >= len( ranges ) ):
                 # index out of bounds
                 return None
             
