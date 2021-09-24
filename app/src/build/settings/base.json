@@ -1,5 +1,5 @@
 {
-    "app_name": "cryocon",
+    "app_name": "Cryocon Controller",
     "author": "Brian Carlsen",
     "main_module": "src/main/python/main.py",
     "version": "0.0.0",
